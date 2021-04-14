@@ -1,0 +1,15 @@
+<div [ngSwitch]="assetName">
+    <ng-container *ngFor="let asset of assetList">
+        <div *ngSwitchCase="asset.assetNumber">
+            <div *ngIf="asset.assetType == 'video'">
+                <app-video-asset videoSource={{asset.assetSource}}></app-video-asset>
+            </div>
+            <div *ngIf="asset.assetType == 'iframe'" [style]="asset.divStyle.css">
+                <app-iframe-asset iframeSource={{asset.assetSource}} width={{asset.iframeStyle.width}} height={{asset.iframeStyle.height}} iframeStyle={{asset.iframeStyle.css}}></app-iframe-asset>
+            </div>
+            <div *ngIf="asset.assetType == 'image'">
+                <app-image-asset imageSource={{asset.assetSource}}></app-image-asset>
+            </div>
+        </div>
+    </ng-container>
+</div>

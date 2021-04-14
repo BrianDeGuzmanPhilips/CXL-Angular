@@ -1,0 +1,22 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div id="main">
+    <div class="header">
+        <div class="title">Cambridge Experience Center</div>
+        <ng-container *ngFor="let headerButton of headerButtonsList">
+            <div class={{headerButton.shortName}} (click)="parsePageAssetWithId(headerButton)">
+                <span class="material-icons md-36 md-light">{{headerButton.icon}}</span>
+            </div>
+        </ng-container>
+    </div>
+    <div class="content">
+        <div class="app-tiles">
+            <ng-container *ngFor="let button of buttonsList">
+                <div class="tile" (click)="parsePageAssetWithId(button)">
+                    <div class="tile-image {{button.shortName}}"></div>
+                    <div class="tile-title">{{button.longName}}</div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

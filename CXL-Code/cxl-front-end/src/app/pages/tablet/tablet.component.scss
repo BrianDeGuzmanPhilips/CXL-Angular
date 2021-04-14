@@ -1,0 +1,257 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black; 
+}
+.header {
+    display: flex;
+    justify-content: left;
+    height: 90px;
+    background-color: black;
+    box-shadow: 0px 2px 4px #999;
+    padding: 0px 0px;
+
+}
+.videoContainer {
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .iframe {
+/* optional */
+width: 100%;
+height: 100%; 
+}
+.title {
+    font-family: 'CentraleSansBook' !important;
+    color: white;
+    font-size: 1.8em;
+    padding: 24px 36px;
+}
+.shield {
+    display: flex;
+    align-items: flex-start;
+    font-size: 3em;
+    padding-right: 36px;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    padding-right: 36px;
+
+  }
+  .sleep {
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    padding-right: 36px;
+
+  }
+
+.icon-white {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.content {
+    display: flex;
+    flex: 1;
+    background-color: #212121;
+    padding: 36px;
+
+}
+.app-tiles {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    background-color: #212121;
+    height: 100%;
+    width: 100%;
+}
+.tile {
+    background-color: rgb(145, 158, 145);
+    display: flex;
+    flex-direction: column;
+}
+.tile-image {
+    flex: 1;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.tile-title {
+    font-size: large;
+    padding: 16px 12px;
+    background-color: #696969;
+    color: #fff;
+}
+.cmon { 
+    background: url('../../../assets/images/PHI_IRIS_THUMBNAIL.png');
+}
+.retail { 
+    background: url('../../../assets/images/retail-urg.png');
+}
+.lotus { 
+    background: url('../../../assets/images/lotus-nicu.png');
+}
+.igt {
+    background: url('../../../assets/images/PHI_IGT_THUMBNAIL.jpg');
+}
+.bhx {
+    background: url('../../../assets/images/PHI_BHX_THUMBNAIL.png');
+}
+.m2icu {
+    background: url('../../../assets/images/PHI_M2ICU_THUMBNAIL.jpg');
+}
+.rocc {
+    background: url('../../../assets/images/PHI_ROCC_THUMBNAIL.png');
+}
+.cloc {
+    background: url('../../../assets/images/PHI_CLOC_THUMBNAIL.jpg');
+}
+.baptist {
+    background: url('../../../assets/images/PHI_LOTUS_BAPTIST_THUMBNAIL.jpg');
+}
+.icu {
+    background: url('../../../assets/images/adult-icu.jpg');
+}
+.omni {
+    background: url('../../../assets/images/PHI_OMNI_CXLMobileThumb.png');
+}
+.placeholder { 
+    background: url('../../../assets/images/placeholder-tile.jpg');
+}
+.virtual-room { 
+    background: url('../../../assets/images/adult-icu.jpg');
+}
+.pfcs { 
+    background: url('../../../assets/images/hospital40-flow-view.png');
+}
+
+@media screen and (min-width:1440px) {
+    .cmon {
+        background: url('../../../assets/images/PHI_IRIS_THUMBNAIL.png');
+    }
+}
+@media screen and (min-width:1024px) {
+    .cmon {
+        background: url('../../../assets/images/covid-screening.png');
+    }
+}
+@media screen and (min-width:720px) {
+    .cmon {
+        background: url('../../../assets/images/covid-screening.png');
+    }
+}
+@media screen and (min-width:480px) {
+    .cmon {
+        background: url('../../../assets/images/covid-screening.png');
+    }
+}
+@media screen and (min-width:375px) {
+    .cmon {
+        background: url('../../../assets/images/covid-screening.png');
+    }
+}
+/* Philips Fonts */
+@font-face {
+    font-family: 'CentraleSansBook';
+    src: url('../../../assets/fonts/centralesans-book-webfont.ttf');
+   }
+    
+   @font-face {
+    font-family: 'CentraleSansLight';
+    src: url('../../../assets/fonts/centralesans-light-webfont.ttf');
+   }
+    
+   @font-face {
+    font-family: 'CentraleSansMedium';
+    src: url('../../../assets/fonts/centralesans-medium-webfont.ttf');
+   }
+    
+.login {  
+        width: 364px;  
+        overflow: hidden;  
+        margin: auto;  
+        background: #000000;  
+        border-radius: 6px ;  
+          
+}  
+
+h2 {  
+    text-align: center;  
+    padding: 20px;
+    font-family: 'CentraleSansBook' !important;
+    color: white;
+    font-size: 1.8em;
+    padding: 24px 0px;
+}  
+
+label {  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 360px;  
+    height: 36px;  
+    border: none;  
+    padding: 8px;  
+}  
+#Pass{  
+    width: 360px;  
+    height: 36px;  
+    border: none;  
+    padding: 8px;  
+      
+}  
+#log{  
+    width: 360px;  
+    height: 48px;  
+    border: none;  
+    border-radius: 6px;  
+    padding-left: 12px;  
+    color: white;  
+    background-color: #666;
+  
+  
+}  
+
+a {  
+    float: right;  
+    background-color: grey;  
+}  
+#log:hover {
+    background-color: #999;  
+
+}
+  .big-shield {
+    width: 50%;
+    margin: auto;
+    font-size: 12em;
+  }
+
+  /* Material Icon Sizes */
+
+  .md-18 { font-size: 18px !important; }
+  .md-24 { font-size: 24px !important; }
+  .md-36 { font-size: 36px !important; }
+  .md-48 { font-size: 48px !important; }
+
+  /* Material Icon Color */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
