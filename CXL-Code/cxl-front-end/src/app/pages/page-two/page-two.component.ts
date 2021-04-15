@@ -29,7 +29,6 @@ export class PageTwoComponent implements OnInit {
         this.assetName = tabletSwitch.assetNumber;
         
         //this.assetName = '1';
-        // route /page1/img/1
       }else if(tabletSwitch.page == ''){
         // initial load, defaults to img0
         this.assetName = '0';
