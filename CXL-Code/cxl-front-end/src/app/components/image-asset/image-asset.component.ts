@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-image-asset',
@@ -7,11 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ImageAssetComponent implements OnInit {
 
-  @Input() imageSource:string;
+  @Input() imageSource: string;
+  @Input() width: string = 'auto';
+  @Input() height: string = 'auto';
   
-  constructor() { }
+  sanitizedStyle: any;
+  constructor(private domSantizer: DomSanitizer) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

@@ -11,8 +11,8 @@ export class PageFiveComponent implements OnInit {
   assetName: string;
 
   assetList: any[] = [
-    { assetNumber: '0', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
-    { assetNumber: '1', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
+    { assetNumber: '0', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920'},
+    { assetNumber: '1', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920' },
     { assetNumber: '2', assetType: 'iframe', assetSource: 'https://l54oh0.axshare.com/#g=1&p=cloc_vision&c=1', 
       iframeStyle: { height:'1080', width:'1920', css: ''},
       divStyle: { css: '' } 
@@ -21,9 +21,9 @@ export class PageFiveComponent implements OnInit {
       iframeStyle: { height:'1080', width:'1920', css: ''},
       divStyle: { css: '' } 
     },
-    { assetNumber: '4', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
-    { assetNumber: '5', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png'},
-    { assetNumber: '6', assetType: 'image', assetSource: 'assets/images/MCI-train-taptag.jpg'}
+    { assetNumber: '4', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920' },
+    { assetNumber: '5', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920'},
+    { assetNumber: '6', assetType: 'image', assetSource: 'assets/images/MCI-train-taptag.jpg', height:'1080', width:'1920'}
   ];
 
   constructor(private socketServer: SocketServiceService) { }

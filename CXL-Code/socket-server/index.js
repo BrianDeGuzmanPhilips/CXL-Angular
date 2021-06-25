@@ -1,7 +1,8 @@
 const server = require('http').createServer();
 const io = require('socket.io')(server, {
     cors: {
-        origin: "http://localhost:4200",
+        //origin: "http://localhost:4200",
+        origin: "http://161.84.207.147:4200",
         methods: ["GET", "POST"],
         credentials: true
       }

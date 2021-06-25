@@ -11,13 +11,13 @@ export class PageFourComponent implements OnInit {
   assetName: string;
 
   assetList: any[] = [
-    { assetNumber: '0', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
-    { assetNumber: '1', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
-    { assetNumber: '2', assetType: 'image', assetSource: 'assets/images/cloc-maps.png' },
-    { assetNumber: '3', assetType: 'images', assetSource: 'assets/images/40-discharge.png' },
-    { assetNumber: '4', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
-    { assetNumber: '5', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png'},
-    { assetNumber: '6', assetType: 'image', assetSource: 'assets/images/omni-hospital-dash.png'}
+    { assetNumber: '0', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920'},
+    { assetNumber: '1', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' , height:'1080', width:'1920'},
+    { assetNumber: '2', assetType: 'image', assetSource: 'assets/images/cloc-maps.png' , height:'1080', width:'1920'},
+    { assetNumber: '3', assetType: 'images', assetSource: 'assets/images/40-discharge.png' , height:'1080', width:'1920'},
+    { assetNumber: '4', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' , height:'1080', width:'1920'},
+    { assetNumber: '5', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920'},
+    { assetNumber: '6', assetType: 'image', assetSource: 'assets/images/omni-hospital-dash.png', height:'1080', width:'1920'}
   ];
 
   constructor(private socketServer: SocketServiceService) { }

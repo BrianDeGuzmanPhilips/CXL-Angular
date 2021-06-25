@@ -11,13 +11,13 @@ export class PageTwoComponent implements OnInit {
   assetName: string;
 
   assetList: any[] = [
-    { assetNumber: '0', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
-    { assetNumber: '1', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
-    { assetNumber: '2', assetType: 'image', assetSource: 'assets/images/cloc-idn.png' },
-    { assetNumber: '3', assetType: 'images', assetSource: 'assets/images/40-pending-admits.png' },
-    { assetNumber: '4', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png' },
-    { assetNumber: '5', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png'},
-    { assetNumber: '6', assetType: 'image', assetSource: 'assets/images/omni-incident-command.png'}
+    { assetNumber: '0', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920' },
+    { assetNumber: '1', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920' },
+    { assetNumber: '2', assetType: 'image', assetSource: 'assets/images/cloc-idn.png', height:'1080', width:'1920' },
+    { assetNumber: '3', assetType: 'images', assetSource: 'assets/images/40-pending-admits.png', height:'1080', width:'1920' },
+    { assetNumber: '4', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920' },
+    { assetNumber: '5', assetType: 'image', assetSource: 'assets/images/shield-dark-1980.png', height:'1080', width:'1920'},
+    { assetNumber: '6', assetType: 'image', assetSource: 'assets/images/omni-incident-command.png', height:'1080', width:'1920'}
   ];
 
   constructor(private socketServer: SocketServiceService) { }

@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class VideoAssetComponent implements OnInit {
   @Input() videoSource: string;
+  @Input() width: string;
+  @Input() height: string;
   constructor() { }
 
   ngOnInit(): void {

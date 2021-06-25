@@ -13,7 +13,8 @@ class TabletInfo {
 })
 export class SocketServiceService {
 
-  socket = io('http://localhost:3000');
+  // socket = io('http://localhost:3000');
+  socket = io('http://161.84.207.147:3000')
 
   public p1Asset$: BehaviorSubject<string> = new BehaviorSubject('');
   //public p1Asset$: Observable<string> = new BehaviorSubject('').asObservable();
